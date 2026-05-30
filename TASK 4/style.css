@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:linear-gradient(90deg,#6a11cb,#2575fc);
+    color:white;
+}
+
+nav h2{
+    font-size:28px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#ffd700;
+    color:#222;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.05);
+}
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#2575fc;
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+/* About */
+
+#about{
+    text-align:center;
+    background:white;
+}
+
+#about p{
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* Projects */
+
+#projects{
+    background:#f8faff;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card h3{
+    color:#2575fc;
+    margin-bottom:15px;
+}
+
+/* To Do Section */
+
+#todo{
+    background:white;
+    text-align:center;
+}
+
+.todo-box{
+    max-width:600px;
+    margin:auto;
+}
+
+.todo-box input{
+    width:70%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.todo-box button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2575fc;
+    color:white;
+    cursor:pointer;
+}
+
+#taskList{
+    margin-top:25px;
+    list-style:none;
+}
+
+#taskList li{
+    background:#eef4ff;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Products */
+
+#products{
+    background:#f8faff;
+}
+
+.controls{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.controls select{
+    padding:10px;
+    margin:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.product-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.product-card{
+    width:260px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card h3{
+    color:#2575fc;
+    margin-bottom:10px;
+}
+
+.product-card p{
+    margin:8px 0;
+}
+
+/* Contact */
+
+#contact{
+    background:white;
+    text-align:center;
+}
+
+#contact p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    height:140px;
+    resize:none;
+}
+
+.contact-form button{
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#6a11cb,#2575fc);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:8px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .project-container,
+    .product-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card,
+    .product-card{
+        width:90%;
+    }
+
+    .todo-box input{
+        width:100%;
+        margin-bottom:10px;
+    }
+}

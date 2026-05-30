@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <h2>My Portfolio</h2>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#todo">To-Do</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+
+<section id="home" class="hero">
+
+    <h1>Hello, I'm Sneha</h1>
+
+    <p>
+        Web Developer | Student | Problem Solver
+    </p>
+
+    <button onclick="welcomeMessage()">
+        Explore
+    </button>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Computer Science student passionate about
+        Web Development, Android Development and Software
+        Engineering. I enjoy building modern, responsive and
+        user-friendly applications.
+    </p>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+        <div class="card">
+            <h3>FlowMate</h3>
+            <p>Smart day planner application.</p>
+        </div>
+
+        <div class="card">
+            <h3>Resume Shortlister</h3>
+            <p>Resume ranking using NLP.</p>
+        </div>
+
+        <div class="card">
+            <h3>To-Do App</h3>
+            <p>Task management system using JavaScript.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- To Do -->
+
+<section id="todo">
+
+    <h2>To-Do List</h2>
+
+    <div class="todo-box">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter Task">
+
+        <button onclick="addTask()">
+            Add Task
+        </button>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+</section>
+
+<!-- Products -->
+
+<section id="products">
+
+    <h2>Product Listing</h2>
+
+    <div class="controls">
+
+        <select id="filter" onchange="filterProducts()">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+        </select>
+
+        <select id="sort" onchange="sortProducts()">
+            <option value="default">Sort</option>
+            <option value="low">Price Low to High</option>
+            <option value="high">Price High to Low</option>
+        </select>
+
+    </div>
+
+    <div id="productContainer"
+         class="product-container">
+    </div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        Feel free to connect with me.
+    </p>
+
+    <div class="contact-form">
+
+        <input type="text"
+               placeholder="Your Name">
+
+        <input type="email"
+               placeholder="Your Email">
+
+        <textarea
+        placeholder="Your Message"></textarea>
+
+        <button>
+            Send Message
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Portfolio Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
